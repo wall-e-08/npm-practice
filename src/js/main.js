@@ -21,15 +21,23 @@
 
 
 		//same height for all div
-		var maxHeight = 0;
-		var eachSmallPricing = $('.each-small-pricing');
-		eachSmallPricing.each(function () {
-			var _thisHeight = $(this).outerHeight();
-			if (maxHeight < _thisHeight)
-				maxHeight = _thisHeight;
-		});
-		eachSmallPricing.height(maxHeight);
+		$.fn.matchHeight = function() {
+			var _this = this;
+			var _maxHeight = 0;
+			var _thisOuterHeight = _this.outerHeight();
+			_this.each(function() {
+				if (_maxHeight < _thisOuterHeight)
+					_maxHeight = _thisOuterHeight;
+			});
+			_this.height(_maxHeight);   //set height
+		};
 
+		$('.each-small-pricing').matchHeight();
+		$('.each-feature').matchHeight();
+
+	});
+
+	$(document).load(function () {
 		//jquery slider init (this should be initialize at end)
 		$(".anim-slider").animateSlider({
 			autoplay    :   true,   //starts the autoplay

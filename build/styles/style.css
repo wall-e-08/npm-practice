@@ -652,6 +652,10 @@ li.anim-slide .container ul > li {
   border: 1px solid #4cae4c;
 }
 
+.each-feature img {
+  width: 150px;
+}
+
 .customer-slider .anim-slide * {
   position: initial;
 }

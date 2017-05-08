@@ -1,12 +1,14 @@
 section#features
 	.container
-		.row
-			.heading.text-center
+		.heading.text-center
+			.row
 				h1.text-uppercase features
 				p Essential functionality covered by a single service
-		.row
-			.content
-				-for(i=0; i<8; i++)
+		.content
+			.row.text-center
+				each feat in features_data
 					.col-xs-6.col-md-3
-						img
-						p something here
+						.each-feature
+							img(src="img/" + feat[0] + ".png")
+							h3.text-capitalize= feat[0]
+							p= feat[1]
