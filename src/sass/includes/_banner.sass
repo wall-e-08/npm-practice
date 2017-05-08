@@ -1,0 +1,22 @@
+@for $i from 1 through 3
+	.banner-slider
+		.anim-slide:nth-child(#{$i})
+			background: url("../img/slider-bg-#{$i}.png")
+
+.banner-slider
+	nav.anim-arrows span[class^="anim-arrows-"]
+		color: #ae0
+		font-size: 40px
+		&:after
+			content: none
+
+li.anim-slide
+	.container
+		position: relative
+		h3
+			top: 55px
+		ul
+			top: 130px
+		ul>li
+			position: initial
+			text-align: left

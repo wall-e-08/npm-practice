@@ -1,0 +1,36 @@
+header
+	nav.navbar.top-most-menu
+		.container
+			.navbar-header.logo
+				a.navbar-brand(href="#")
+					img(src=logoUrl)
+			.text-center
+				ul.nav.navbar-nav.navbar-right
+					each user_nav in ["Contact", "login", "lang(EN)", "call us"]
+						if user_nav == "lang(EN)"
+							li.dropdown
+								a.dropdown-toggle(href="#",data-toggle="dropdown",role="button",aria-haspopup="true",aria-expanded="false")= user_nav
+									span.caret
+								ul.dropdown-menu
+									each lang_dropdown in ["EN", "BN"]
+										li.text-center
+											a(href="#")= lang_dropdown
+						else
+							li.text-capitalize
+								a(href="#")= user_nav
+	nav.navbar.navbar-default
+		.container
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button", data-toggle="collapse" data-target="#main-menu" aria-expanded="false")
+					span.sr-only Toggle navigation
+					-for (i=0; i<3; i++)
+						span.icon-bar
+			.collapse.navbar-collapse.text-center#main-menu
+				ul.nav.navbar-nav.text-uppercase
+					each main_menu_item in ["item 1", "item 2", "item 3", "item 4", "item 5", "item 6"]
+						if main_menu_item == "item 1"
+							li.active
+								a.transition(href="#")= main_menu_item
+						else
+							li
+								a.transition(href="#")= main_menu_item

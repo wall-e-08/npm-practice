@@ -1,0 +1,114 @@
+//- <head> data
+-var pageTitle = "Concitus Hosting"
+-var mainCss = "style-min/main.min.css"	//- minified css file
+
+-var mainJS0 = "../src/js/1.jquery-3.1.1.min.js"
+-var mainJS1 = "../src/js/2.jquery-migrate-3.0.0.min.js"
+-var mainJS2 = "../src/js/4.jquery.bootstrap.min.js"
+-var mainJS3 = "../src/js/3.jquery.modernizr.js"
+-var mainJS4 = "../src/js/5.jquery.animateSlider.js"
+-var mainJS5 = "../src/js/main.js"
+-var mainJS = "scripts/scripts.min.js"	//- main javascript
+
+-var googleFont = '//fonts.googleapis.com/css?family=Lato:400,400i|Ubuntu:400,700'
+
+-var logoUrl = "img/logo.jpg"
+
+
+
+
+//- banner data
+-
+	var offer_lists = [
+		"FAST Web Hosting with FREE SSDs",
+		"FREE 1-click installer with 400+ applications",
+		"FREE cPanel for easy server management"
+	]
+
+
+
+//- plans data
+-var planType = ["", "Free", "Student", "Business"]    //-used blank in first place, because there's no heading for description
+-
+	var planData = [
+		["site", "00", "01", "02"],
+		["something", "10", "11", "12"],
+		["zzz", false, false, true],
+		["amount", "5", "20", "500"],
+		["help", false, true, true],
+		["domain", "200", "500", "80045"]
+	]
+
+mixin PlanMarking(_param)
+	if(!_param)
+		i.fa.fa-warning
+	else if(_param === true)
+		i.fa-adjust
+	else
+		span= _param
+
+mixin PlanTitle (_iteration)
+	if (_iteration != 0)
+		.plan-chart
+			-for (_j=0; _j<3; _j++)
+				span
+			h3.text-uppercase= planType[_iteration]
+
+
+//- customer's data
+-var customerImgUrlPrefix = "https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/"
+-
+	var customers = [
+		{
+			"name" : "john snow",
+			"imgUrl" : customerImgUrlPrefix + "200-200-pixels.png",
+			"msg" : "sdfgwe wgrwn3r ch2h23eg2hb34g23g4fvbnsadvashda"
+		},
+		{
+			"name" : "sherlock holmes",
+			"imgUrl" : customerImgUrlPrefix + "200-200-pixels.png",
+			"msg" : "jweh rwegrnjwehrbjsd f  kjh vmsjhdfda"
+		},
+		{
+			"name" : "john snow",
+			"imgUrl" : customerImgUrlPrefix + "200-200-pixels.png",
+			"msg" : "mhewqui hkjnbdnsfwek,ruiasdm, iugjqwbenmbh"
+		}
+	]
+
+
+//- migration data
+-var mainImgUrl = "//imh01-inmotionhosting1.netdna-ssl.com/img/business/web-migration-vert.png"
+-var imgUrlPrefix = "//imh01-inmotionhosting1.netdna-ssl.com/img/"
+-
+	var migrationImageData = [
+		{"imgUrl" : imgUrlPrefix + "files-circle.png", 		"title" : "Site Files"},
+		{"imgUrl" : imgUrlPrefix + "database-circle.png",	"title" : "Databases"},
+		{"imgUrl" : imgUrlPrefix + "cpanel-circle.png",		"title" : "cPanel Setting"},
+		{"imgUrl" : imgUrlPrefix + "domain-circle.png",		"title" : "Domain Records"},
+		{"imgUrl" : imgUrlPrefix + "email-circle.png",		"title" : "Email Accounts"}
+	]
+
+
+//- Detailed plan
+-
+	var facilities = [
+		{1: "10", 2: "20", 3: "30"},
+		{1: "xaxaa", 2: "asdhqwge", 3: "3aeiqwetg0"},
+		{1: "qkcjvhs", 2: "jkfagvhsad", 3: "yo yo"},
+		{1: "kjsadghasd", 2: "qweewegs", 3: "qwezx"},
+		{1: "10 asda", 2: "20 q1", 3: "30 cv q"},
+		{1: "1000", 2: "2033", 3: "30"},
+		{1: "1xxx0", 2: "2www0", 3: "3qweqwe0"}
+	]
+
+
+
+//- footer social links (usage in font awesome)
+-
+	var social_links = [
+		"facebook",
+		"twitter",
+		"skype",
+		"gmail"
+	]

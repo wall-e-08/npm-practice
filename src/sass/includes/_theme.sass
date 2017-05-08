@@ -1,0 +1,49 @@
+$btn-dim: 30px
+$btn-gap: 10px
+$wrapper-width: $btn-dim*3 + $btn-gap*5
+#theme
+	position: fixed
+	right: - $wrapper-width
+	top: 20px
+	z-index: 5000
+	.theme-wrapper
+		position: relative
+		width: $wrapper-width
+		.change-theme
+			position: absolute
+			left: -($btn-dim + $btn-gap)
+			background: $white
+			border: 0.5px solid $darker-gray
+			&:hover
+				border-color: $white
+				box-shadow: 0 0 5px $darker-gray
+		button.btn
+			width: $btn-dim
+			height: $btn-dim
+			padding: 0
+		.all-colors
+			background: $dark-gray
+			padding: $btn-gap
+			display: flex
+			flex-wrap: wrap
+			border-radius: 5px
+			button.btn
+				margin: $btn-gap/2
+				border: 1px solid $white
+			button.orange
+				background-color: $orange-light
+			button.yellow
+				background-color: $yellow-light
+			button.green
+				background-color: $green-light
+			button.mint
+				background-color: $mint-light
+			button.aqua
+				background-color: $aqua-light
+				
+.colorbox-open
+	right: 5px !important
+	
+
+	
+	

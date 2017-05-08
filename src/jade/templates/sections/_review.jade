@@ -1,0 +1,19 @@
+section#review
+	.container-fluid
+		.row
+			ul.anim-slider.customer-slider
+				//each _customer in customers
+				-for (i = 0; i<customers.length; i++)
+					li.anim-slide.text-center
+						.customer-img-wrapper
+							img(src= customers[i]["imgUrl"])
+						.customer-name
+							p= customers[i]['name']
+						.customer-msg
+							p= customers[i]['msg']
+
+				nav.anim-arrows
+					span.anim-arrows-prev
+						i.fa.fa-arrow-circle-o-left
+					span.anim-arrows-next
+						i.fa.fa-arrow-circle-o-right

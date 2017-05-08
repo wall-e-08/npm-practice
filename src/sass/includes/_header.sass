@@ -1,0 +1,45 @@
+$top-most-nav-height: 70px
+
+.navbar
+	margin-bottom: 0
+	border-radius: 0
+	border: none
+.dropdown-menu
+	z-index: 1015
+
+.top-most-menu
+	.navbar-brand
+		padding: 5px 0
+		img
+			height: 100%
+	.nav>li>a
+		color: $darkest-gray
+		font-size: 17px
+	.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+		background: $light-gray
+
+#main-menu
+	.navbar-nav
+		li
+			padding: 10px 5px
+		li>a
+			padding: 6px 10px
+			border: 1px solid transparent
+			border-radius: 3px
+
+@media (min-width: 768px)
+	.top-most-menu
+		.navbar-brand
+			height: $top-most-nav-height
+		.navbar-nav>li>a
+			padding-top: ($top-most-nav-height - 20)/2
+			padding-bottom: ($top-most-nav-height - 20)/2
+		.dropdown-menu
+			min-width: 20px
+	.navbar-default
+		.navbar-nav
+			float: none
+			margin: 0 auto
+			display: inline-block
+	#main-menu
+		height: 50px!important

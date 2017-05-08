@@ -1,0 +1,21 @@
+section#detailed-plan
+	.container
+		.row.text-center
+			-for (i=0; i<3; i++)
+				.col-md-4
+					.each-plan
+						if (i==1)
+							.recommended.text-uppercase recommended
+						.plan-name
+							.plan-chart
+								-for (j=0; j<3; j++)
+									span
+							h3.text-uppercase business
+						p.plan-price $#{(i+1)*15 - 1}.99/mo.
+						ul.plan-facilities
+							each arr in facilities
+								li
+									span
+										i.fa.fa-adjust
+									span= arr[i + 1]
+						a.btn.btn-order.text-uppercase order now

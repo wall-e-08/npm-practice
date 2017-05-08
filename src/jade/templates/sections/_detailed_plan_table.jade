@@ -1,0 +1,20 @@
+section#detailed-plan
+	.container
+		.row.text-center
+			table
+				tr
+					-for (i=0; i<4; i++)
+						th.text-center
+							+PlanTitle(i)
+				each rowValues in planData
+					tr
+						each val in rowValues
+							td
+								+PlanMarking(val)
+				tr
+					-for (k=0; k<4; k++)
+						if (k == 0)
+							td
+						else
+							td
+								a.btn.btn-order.text-uppercase order now

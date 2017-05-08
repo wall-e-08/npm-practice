@@ -1,0 +1,39 @@
+#banner
+	.container-fluid
+		.row
+			ul.anim-slider.banner-slider
+				//-for (i = 0; i<3; i++)
+					li.anim-slide
+						h1.xaxa Dedicated server with free Memory card
+						h3#test Get up to 56% OFF WordPress Hosting
+						ul.offers
+							-each offer in offer_lists
+								li= offer
+				li.anim-slide
+					.container
+						h1#asd Dedicated server with free Memory card
+						h3 Get up to 56% OFF WordPress Hosting
+						ul
+							-each offer in offer_lists
+								li= offer
+				li.anim-slide
+					.container
+						h1.xaxa1 Dedicated server with free Memory card
+						h3#test1 Get up to 56% OFF WordPress Hosting
+						ul.offers1
+							-each offer in offer_lists
+								li= offer
+				li.anim-slide
+					.container
+						h1.xaxa2 Dedicated server with free Memory card
+						h3#test2 Get up to 56% OFF WordPress Hosting
+						ul.offers2
+							-each offer in offer_lists
+								li= offer
+
+
+				nav.anim-arrows
+					span.anim-arrows-prev
+						i.fa.fa-arrow-circle-o-left
+					span.anim-arrows-next
+						i.fa.fa-arrow-circle-o-right

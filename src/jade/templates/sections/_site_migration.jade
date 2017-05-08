@@ -1,0 +1,35 @@
+section#site-migration
+	.container
+		.row
+			.heading.text-center
+				h1.text-uppercase Hassle-Free Website Migration
+				p Enjoy the peace of mind of our expert staff handling your migration needs
+		.row
+			.col-md-3
+				.migration-map-img
+					img(src= mainImgUrl)
+			.col-md-5
+				.migration-details
+					h4 What We Migrate For You
+					ul
+						each value in migrationImageData
+							li
+								img(src= value['imgUrl'])
+								span= value['title']
+			.col-md-4
+				.how-migrate
+					h4 How it works
+					ul.how-migrate-lists
+						li 1.&nbsp; Purchase a Hosting Plan
+						li 2.&nbsp; Submit the Transfer Request Form
+						li 3.&nbsp; Wait for Completion
+				.start-migrate
+					h4.text-capitalize get started
+					a.btn.btn-primary(href="#") choose a plan
+				.question-about-migrate
+					h4 Questions?
+					a.btn.btn-primary(href="#") call us
+		.row.text-center
+			p.email-migration
+				sup *
+				|Email accounts only included with cPanel migrations. Non-cPanel migrations may require email to be manually migrated.

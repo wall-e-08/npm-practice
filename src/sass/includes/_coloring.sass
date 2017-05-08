@@ -1,0 +1,76 @@
+@import "_colors"
+
+
+.white-bg
+	background-color: $white
+	
+.default-color
+	background: $white !important
+	color: $darkest-gray !important
+
+
+.gray-bg
+	background-color: $light-gray
+
+.small-plan-description:before
+	background-color: $dark-gray
+	
+li.anim-slide h1
+	text-shadow: 1px 1px $light-gray
+	
+=theme($_primary, $_secondary, $_base-1, $_base-2, $_btn)
+	.btn
+		background: $_btn
+		color: $white
+	.navbar-default
+		background-color: $_primary
+	#main-menu
+		.navbar-nav
+			li>a
+				color: $light-gray
+				background: $_secondary / 1.03
+				box-shadow: inset -1px -2px 5px 0 $darkest-gray
+			li.active>a, li>a:hover, li>a:active
+				background: $_secondary
+				color: $white
+			li.active>a, li>a:hover
+				box-shadow: none
+				border-color: $darker-gray
+	.each-small-pricing
+		border: 1px solid $dark-gray
+		background-color: $light-gray
+	#small-pricing
+		.small-plan-badge
+			color: $white
+		.col-md-4:nth-child(2)
+			.small-plan-badge
+				background-color: $_secondary
+			.small-plan-badge:before, .small-plan-badge:after
+				border-bottom-color: $_secondary
+		.col-md-4:nth-child(3)
+			.small-plan-badge
+				background-color: $_base-1
+			.small-plan-badge:before, .small-plan-badge:after
+				border-bottom-color: $_base-1
+		.plan-chart
+			span
+				background-color: $_primary
+		.small-plan-price
+			color: $_base-1
+
+
+
+#orange
+	+theme($orange-light, $orange-dark, $orange-based-1, $orange-based-2, $orange-based-btn)
+	
+#yellow
+	+theme($yellow-light, $yellow-dark, $yellow-based-1, $yellow-based-2, $yellow-based-btn)
+	
+#green
+	+theme($green-light, $green-dark, $green-based-1, $green-based-2, $green-based-btn)
+	
+#mint
+	+theme($mint-light, $mint-dark, $mint-based-1, $mint-based-2, $mint-based-btn)
+	
+#aqua
+	+theme($aqua-light, $aqua-dark, $aqua-based-1, $aqua-based-2, $aqua-based-btn)
