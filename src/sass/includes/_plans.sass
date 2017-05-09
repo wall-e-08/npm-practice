@@ -25,29 +25,6 @@ $best_pseudo_left_right: 84px
 	.col-md-4:nth-child(2), .col-md-4:nth-child(3)
 		.small-plan-badge
 			padding: $topSeller_pad-t $topSeller_pad-b
-	.small-plan-badge
-		font-size: $badge_font_sz
-		font-weight: bold
-		position: absolute
-		top: $badge_top_right
-		right: $badge_top_right
-		transform: translate(50%, -50%) rotateZ(45deg)
-	//.col-md-4:nth-child(3)
-		.small-plan-badge:after
-			content: ''
-			display: block
-			position: absolute
-			left: -36px
-			bottom: 0
-			border: 82px solid
-			z-index: -1
-			border-top-color: transparent
-			border-bottom-color: aqua
-			border-left-color: transparent
-			border-right-color: transparent
-
-#small-pricing
-	.col-md-4:nth-child(2), .col-md-4:nth-child(3)
 		.small-plan-badge:before,  .small-plan-badge:after
 			content: ''
 			position: absolute
@@ -58,6 +35,14 @@ $best_pseudo_left_right: 84px
 			border-left-color: transparent
 			border-right-color: transparent
 			border-top-color: transparent
+	.small-plan-badge
+		font-size: $badge_font_sz
+		font-weight: bold
+		position: absolute
+		top: $badge_top_right
+		right: $badge_top_right
+		transform: translate(50%, -50%) rotateZ(45deg)
+		
 
 
 #small-pricing
@@ -75,7 +60,7 @@ $best_pseudo_left_right: 84px
 				left: $best_pseudo_left_right
 
 
-.plan-chart, .small-plan-name h3
+.plan-chart, .small-plan-name h3, #detailed-plan th h3
 	display: inline-block
 
 .plan-chart
@@ -90,7 +75,7 @@ $best_pseudo_left_right: 84px
 
 
 =plan-chart($_childName)
-	.col-md-4:nth-child(#{$_childName})
+	.col-md-4:nth-child(#{$_childName}), .plan-table-parent th:nth-child(#{$_childName + 1})
 		.plan-chart
 			@for $i from 1 through 3
 				span:nth-child(#{$i})
@@ -99,7 +84,7 @@ $best_pseudo_left_right: 84px
 					@else
 						height: 50%
 	
-#small-pricing
+#small-pricing, #detailed-plan
 	+plan-chart(1)
 	+plan-chart(2)
 	+plan-chart(3)
@@ -130,7 +115,5 @@ $best_pseudo_left_right: 84px
 	
 	
 #detailed-plan
-	table
-		width: 100%
-		tr
-			border: 1px solid #4cae4c
+	.plan-table-parent
+		overflow-x: auto
