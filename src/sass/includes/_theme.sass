@@ -30,16 +30,11 @@ $wrapper-width: $btn-dim*3 + $btn-gap*5
 			button.btn
 				margin: $btn-gap/2
 				border: 1px solid $white
-			button.orange
-				background-color: $orange-light
-			button.yellow
-				background-color: $yellow-light
-			button.green
-				background-color: $green-light
-			button.mint
-				background-color: $mint-light
-			button.aqua
-				background-color: $aqua-light
+			@each $val in $colors-list
+				$color-name: nth($val, 1)
+				$colors: nth($val, 2)
+				button.#{$color-name}
+					background-color: nth($colors, 1)
 				
 .colorbox-open
 	right: 5px !important

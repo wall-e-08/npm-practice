@@ -41,7 +41,7 @@ li.anim-slide h1
 		a:hover
 			color: $_primary
 	.txt-color
-		color: $_primary * #010100
+		color: $_primary //* #010100
 	.plan-chart
 		span
 			background-color: $_primary
@@ -102,17 +102,26 @@ li.anim-slide h1
 
 
 
-#orange
-	+theme($orange-light, $orange-dark, $orange-based-1, $orange-based-2, $orange-based-btn)
-	
-#yellow
-	+theme($yellow-light, $yellow-dark, $yellow-based-1, $yellow-based-2, $yellow-based-btn)
-	
-#green
-	+theme($green-light, $green-dark, $green-based-1, $green-based-2, $green-based-btn)
-	
-#mint
-	+theme($mint-light, $mint-dark, $mint-based-1, $mint-based-2, $mint-based-btn)
-	
-#aqua
-	+theme($aqua-light, $aqua-dark, $aqua-based-1, $aqua-based-2, $aqua-based-btn)
+		
+
+@each $val in $colors-list
+	$color-name: nth($val, 1)
+	$colors: nth($val, 2)
+	##{$color-name}
+		+theme(nth($colors, 1), nth($colors, 2), nth($colors, 3), nth($colors, 4), nth($colors, 5))
+		
+/*
+	#orange
+		+theme($orange-light, $orange-dark, $orange-based-1, $orange-based-2, $orange-based-btn)
+		
+	#yellow
+		+theme($yellow-light, $yellow-dark, $yellow-based-1, $yellow-based-2, $yellow-based-btn)
+		
+	#green
+		+theme($green-light, $green-dark, $green-based-1, $green-based-2, $green-based-btn)
+		
+	#mint
+		+theme($mint-light, $mint-dark, $mint-based-1, $mint-based-2, $mint-based-btn)
+		
+	#aqua
+		+theme($aqua-light, $aqua-dark, $aqua-based-1, $aqua-based-2, $aqua-based-btn)
