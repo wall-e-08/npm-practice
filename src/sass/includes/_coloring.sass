@@ -18,28 +18,48 @@
 li.anim-slide h1
 	text-shadow: 1px 1px $light-gray
 	
+	
+.dark-bg
+	background-color: $light-gray
+	padding-top: 20px
+	padding-bottom: 20px
+	
+	
 =theme($_primary, $_secondary, $_base-1, $_base-2, $_btn)
+	a
+		color: $_primary
+	a:hover
+		color: $_btn
 	.btn
 		background: $_btn
 		color: $white
-	.navbar-default
-		background-color: $_primary
+	.btn:hover
+		color: $light-gray
+	.top-most-menu
+		a
+			color: $darkest-gray
+		a:hover
+			color: $_primary
 	.txt-color
-		color: $_base-2
+		color: $_primary * #010100
 	.plan-chart
 		span
 			background-color: $_primary
+	.navbar-default
+		background-color: $_primary
 	#main-menu
 		.navbar-nav
 			li>a
-				color: $light-gray
-				background: $_secondary / 1.03
-				box-shadow: inset -1px -2px 5px 0 $darkest-gray
-			li.active>a, li>a:hover, li>a:active
-				background: $_secondary
 				color: $white
+				border-bottom: 3px solid transparent
+				//background: $_secondary / 1.03
+				//box-shadow: inset -1px -2px 5px 0 $darkest-gray
+				//border: 2px solid $_secondary
+			li.active>a, li>a:hover, li>a:active
+				background: transparent
+				color: $white
+				border-color: $_btn
 			li.active>a, li>a:hover
-				box-shadow: none
 				border-color: $darker-gray
 	.each-small-pricing
 		border: 1px solid $dark-gray
@@ -48,10 +68,20 @@ li.anim-slide h1
 		.small-plan-badge
 			color: $white
 		.col-md-4:nth-child(2)
+			.each-small-pricing
+				border: 2px solid $darkest-gray
 			.small-plan-badge
 				background-color: $_secondary
 			.small-plan-badge:before, .small-plan-badge:after
 				border-bottom-color: $_secondary
+			.small-plan-price
+				color: $_secondary
+			.btn
+				background-color: $_primary
+				border: 2px solid transparent
+			.btn:hover
+				background-color: $_btn
+				border-color: $darkest-gray
 		.col-md-4:nth-child(3)
 			.small-plan-badge
 				background-color: $_base-1
@@ -59,6 +89,16 @@ li.anim-slide h1
 				border-bottom-color: $_base-1
 		.small-plan-price
 			color: $_base-1
+	footer
+		background-color: $darkest-gray
+		color: $white
+		ul.nav
+			li>a
+				background-color: $_base-1
+				color: $white
+			li>a:hover
+				background-color: $light-gray
+				color: $_base-1
 
 
 

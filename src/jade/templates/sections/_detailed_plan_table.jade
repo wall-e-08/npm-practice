@@ -1,17 +1,17 @@
-section#detailed-plan
+section#detailed-plan.mt-50
 	.container
 		.row.text-center.plan-table-parent
 			table.table.table-striped.table-bordered
-				tr
+				tr.row
 					-for (i=0; i<4; i++)
 						th.text-center
 							+PlanTitle(i)
 				each rowValues in planData
-					tr
+					tr.row
 						each val in rowValues
 							td
 								+PlanMarking(val)
-				tr
+				tr.row
 					-for (k=0; k<4; k++)
 						if (k == 0)
 							td

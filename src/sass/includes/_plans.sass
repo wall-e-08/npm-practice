@@ -1,6 +1,6 @@
 /* small plan */
 .each-small-pricing
-	border-radius: 15px
+	border-radius: 8px
 	padding: 5px 10px
 	position: relative
 
@@ -22,6 +22,13 @@ $best_pseudo_left_right: 84px
 
 
 #small-pricing
+	margin-top: 100px
+	.col-md-4
+		$pad-l-r: 5px
+		padding-left: $pad-l-r
+		padding-right: $pad-l-r
+	.col-md-4:nth-child(2)
+		margin-top: -35px
 	.col-md-4:nth-child(2), .col-md-4:nth-child(3)
 		.small-plan-badge
 			padding: $topSeller_pad-t $topSeller_pad-b
@@ -117,3 +124,8 @@ $best_pseudo_left_right: 84px
 #detailed-plan
 	.plan-table-parent
 		overflow-x: auto
+	tr
+		th:first-child, td:first-child
+			width: 40%
+		th:not(:first-child), td:not(:first-child)
+			width: 20%

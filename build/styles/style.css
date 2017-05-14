@@ -90,7 +90,7 @@ img {
   border: none;
 }
 
-.transition {
+.transition, .btn {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -119,36 +119,61 @@ li.anim-slide h1 {
   text-shadow: 1px 1px #eff1f3;
 }
 
+.dark-bg {
+  background-color: #eff1f3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#orange a {
+  color: #fc6e51;
+}
+
+#orange a:hover {
+  color: #3BB769;
+}
+
 #orange .btn {
   background: #3BB769;
   color: #fff;
 }
 
-#orange .navbar-default {
-  background-color: #fc6e51;
+#orange .btn:hover {
+  color: #eff1f3;
+}
+
+#orange .top-most-menu a {
+  color: #434a54;
+}
+
+#orange .top-most-menu a:hover {
+  color: #fc6e51;
 }
 
 #orange .txt-color {
-  color: #FCAA51;
+  color: #fc6e00;
 }
 
 #orange .plan-chart span {
   background-color: #fc6e51;
 }
 
+#orange .navbar-default {
+  background-color: #fc6e51;
+}
+
 #orange #main-menu .navbar-nav li > a {
-  color: #eff1f3;
-  background: #b52d10;
-  box-shadow: inset -1px -2px 5px 0 #434a54;
+  color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 #orange #main-menu .navbar-nav li.active > a, #orange #main-menu .navbar-nav li > a:hover, #orange #main-menu .navbar-nav li > a:active {
-  background: #ba2e10;
+  background: transparent;
   color: #fff;
+  border-color: #3BB769;
 }
 
 #orange #main-menu .navbar-nav li.active > a, #orange #main-menu .navbar-nav li > a:hover {
-  box-shadow: none;
   border-color: #656d78;
 }
 
@@ -161,12 +186,30 @@ li.anim-slide h1 {
   color: #fff;
 }
 
+#orange #small-pricing .col-md-4:nth-child(2) .each-small-pricing {
+  border: 2px solid #434a54;
+}
+
 #orange #small-pricing .col-md-4:nth-child(2) .small-plan-badge {
   background-color: #ba2e10;
 }
 
 #orange #small-pricing .col-md-4:nth-child(2) .small-plan-badge:before, #orange #small-pricing .col-md-4:nth-child(2) .small-plan-badge:after {
   border-bottom-color: #ba2e10;
+}
+
+#orange #small-pricing .col-md-4:nth-child(2) .small-plan-price {
+  color: #ba2e10;
+}
+
+#orange #small-pricing .col-md-4:nth-child(2) .btn {
+  background-color: #fc6e51;
+  border: 2px solid transparent;
+}
+
+#orange #small-pricing .col-md-4:nth-child(2) .btn:hover {
+  background-color: #3BB769;
+  border-color: #434a54;
 }
 
 #orange #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -181,36 +224,70 @@ li.anim-slide h1 {
   color: #37829E;
 }
 
+#orange footer {
+  background-color: #434a54;
+  color: #fff;
+}
+
+#orange footer ul.nav li > a {
+  background-color: #37829E;
+  color: #fff;
+}
+
+#orange footer ul.nav li > a:hover {
+  background-color: #eff1f3;
+  color: #37829E;
+}
+
+#yellow a {
+  color: #ffc754;
+}
+
+#yellow a:hover {
+  color: #6147AF;
+}
+
 #yellow .btn {
   background: #6147AF;
   color: #fff;
 }
 
-#yellow .navbar-default {
-  background-color: #ffc754;
+#yellow .btn:hover {
+  color: #eff1f3;
+}
+
+#yellow .top-most-menu a {
+  color: #434a54;
+}
+
+#yellow .top-most-menu a:hover {
+  color: #ffc754;
 }
 
 #yellow .txt-color {
-  color: #ffe354;
+  color: #ffc700;
 }
 
 #yellow .plan-chart span {
   background-color: #ffc754;
 }
 
+#yellow .navbar-default {
+  background-color: #ffc754;
+}
+
 #yellow #main-menu .navbar-nav li > a {
-  color: #eff1f3;
-  background: #b98211;
-  box-shadow: inset -1px -2px 5px 0 #434a54;
+  color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 #yellow #main-menu .navbar-nav li.active > a, #yellow #main-menu .navbar-nav li > a:hover, #yellow #main-menu .navbar-nav li > a:active {
-  background: #bf8611;
+  background: transparent;
   color: #fff;
+  border-color: #6147AF;
 }
 
 #yellow #main-menu .navbar-nav li.active > a, #yellow #main-menu .navbar-nav li > a:hover {
-  box-shadow: none;
   border-color: #656d78;
 }
 
@@ -223,12 +300,30 @@ li.anim-slide h1 {
   color: #fff;
 }
 
+#yellow #small-pricing .col-md-4:nth-child(2) .each-small-pricing {
+  border: 2px solid #434a54;
+}
+
 #yellow #small-pricing .col-md-4:nth-child(2) .small-plan-badge {
   background-color: #bf8611;
 }
 
 #yellow #small-pricing .col-md-4:nth-child(2) .small-plan-badge:before, #yellow #small-pricing .col-md-4:nth-child(2) .small-plan-badge:after {
   border-bottom-color: #bf8611;
+}
+
+#yellow #small-pricing .col-md-4:nth-child(2) .small-plan-price {
+  color: #bf8611;
+}
+
+#yellow #small-pricing .col-md-4:nth-child(2) .btn {
+  background-color: #ffc754;
+  border: 2px solid transparent;
+}
+
+#yellow #small-pricing .col-md-4:nth-child(2) .btn:hover {
+  background-color: #6147AF;
+  border-color: #434a54;
 }
 
 #yellow #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -243,36 +338,70 @@ li.anim-slide h1 {
   color: #4562AB;
 }
 
+#yellow footer {
+  background-color: #434a54;
+  color: #fff;
+}
+
+#yellow footer ul.nav li > a {
+  background-color: #4562AB;
+  color: #fff;
+}
+
+#yellow footer ul.nav li > a:hover {
+  background-color: #eff1f3;
+  color: #4562AB;
+}
+
+#green a {
+  color: #a0d468;
+}
+
+#green a:hover {
+  color: #914D9A;
+}
+
 #green .btn {
   background: #914D9A;
   color: #fff;
 }
 
-#green .navbar-default {
-  background-color: #a0d468;
+#green .btn:hover {
+  color: #eff1f3;
+}
+
+#green .top-most-menu a {
+  color: #434a54;
+}
+
+#green .top-most-menu a:hover {
+  color: #a0d468;
 }
 
 #green .txt-color {
-  color: #51a679;
+  color: #a0d400;
 }
 
 #green .plan-chart span {
   background-color: #a0d468;
 }
 
+#green .navbar-default {
+  background-color: #a0d468;
+}
+
 #green #main-menu .navbar-nav li > a {
-  color: #eff1f3;
-  background: #598e20;
-  box-shadow: inset -1px -2px 5px 0 #434a54;
+  color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 #green #main-menu .navbar-nav li.active > a, #green #main-menu .navbar-nav li > a:hover, #green #main-menu .navbar-nav li > a:active {
-  background: #5c9221;
+  background: transparent;
   color: #fff;
+  border-color: #914D9A;
 }
 
 #green #main-menu .navbar-nav li.active > a, #green #main-menu .navbar-nav li > a:hover {
-  box-shadow: none;
   border-color: #656d78;
 }
 
@@ -285,12 +414,30 @@ li.anim-slide h1 {
   color: #fff;
 }
 
+#green #small-pricing .col-md-4:nth-child(2) .each-small-pricing {
+  border: 2px solid #434a54;
+}
+
 #green #small-pricing .col-md-4:nth-child(2) .small-plan-badge {
   background-color: #5c9221;
 }
 
 #green #small-pricing .col-md-4:nth-child(2) .small-plan-badge:before, #green #small-pricing .col-md-4:nth-child(2) .small-plan-badge:after {
   border-bottom-color: #5c9221;
+}
+
+#green #small-pricing .col-md-4:nth-child(2) .small-plan-price {
+  color: #5c9221;
+}
+
+#green #small-pricing .col-md-4:nth-child(2) .btn {
+  background-color: #a0d468;
+  border: 2px solid transparent;
+}
+
+#green #small-pricing .col-md-4:nth-child(2) .btn:hover {
+  background-color: #914D9A;
+  border-color: #434a54;
 }
 
 #green #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -305,36 +452,70 @@ li.anim-slide h1 {
   color: #ea8e73;
 }
 
+#green footer {
+  background-color: #434a54;
+  color: #fff;
+}
+
+#green footer ul.nav li > a {
+  background-color: #ea8e73;
+  color: #fff;
+}
+
+#green footer ul.nav li > a:hover {
+  background-color: #eff1f3;
+  color: #ea8e73;
+}
+
+#mint a {
+  color: #48cfad;
+}
+
+#mint a:hover {
+  color: #ff9759;
+}
+
 #mint .btn {
   background: #ff9759;
   color: #fff;
 }
 
-#mint .navbar-default {
-  background-color: #48cfad;
+#mint .btn:hover {
+  color: #eff1f3;
+}
+
+#mint .top-most-menu a {
+  color: #434a54;
+}
+
+#mint .top-most-menu a:hover {
+  color: #48cfad;
 }
 
 #mint .txt-color {
-  color: #548AD0;
+  color: #48cf00;
 }
 
 #mint .plan-chart span {
   background-color: #48cfad;
 }
 
+#mint .navbar-default {
+  background-color: #48cfad;
+}
+
 #mint #main-menu .navbar-nav li > a {
-  color: #eff1f3;
-  background: #05a57d;
-  box-shadow: inset -1px -2px 5px 0 #434a54;
+  color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 #mint #main-menu .navbar-nav li.active > a, #mint #main-menu .navbar-nav li > a:hover, #mint #main-menu .navbar-nav li > a:active {
-  background: #05aa81;
+  background: transparent;
   color: #fff;
+  border-color: #ff9759;
 }
 
 #mint #main-menu .navbar-nav li.active > a, #mint #main-menu .navbar-nav li > a:hover {
-  box-shadow: none;
   border-color: #656d78;
 }
 
@@ -347,12 +528,30 @@ li.anim-slide h1 {
   color: #fff;
 }
 
+#mint #small-pricing .col-md-4:nth-child(2) .each-small-pricing {
+  border: 2px solid #434a54;
+}
+
 #mint #small-pricing .col-md-4:nth-child(2) .small-plan-badge {
   background-color: #05aa81;
 }
 
 #mint #small-pricing .col-md-4:nth-child(2) .small-plan-badge:before, #mint #small-pricing .col-md-4:nth-child(2) .small-plan-badge:after {
   border-bottom-color: #05aa81;
+}
+
+#mint #small-pricing .col-md-4:nth-child(2) .small-plan-price {
+  color: #05aa81;
+}
+
+#mint #small-pricing .col-md-4:nth-child(2) .btn {
+  background-color: #48cfad;
+  border: 2px solid transparent;
+}
+
+#mint #small-pricing .col-md-4:nth-child(2) .btn:hover {
+  background-color: #ff9759;
+  border-color: #434a54;
 }
 
 #mint #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -367,36 +566,70 @@ li.anim-slide h1 {
   color: #ffc059;
 }
 
+#mint footer {
+  background-color: #434a54;
+  color: #fff;
+}
+
+#mint footer ul.nav li > a {
+  background-color: #ffc059;
+  color: #fff;
+}
+
+#mint footer ul.nav li > a:hover {
+  background-color: #eff1f3;
+  color: #ffc059;
+}
+
+#aqua a {
+  color: #30A8CC;
+}
+
+#aqua a:hover {
+  color: #ff9b35;
+}
+
 #aqua .btn {
   background: #ff9b35;
   color: #fff;
 }
 
-#aqua .navbar-default {
-  background-color: #30A8CC;
+#aqua .btn:hover {
+  color: #eff1f3;
+}
+
+#aqua .top-most-menu a {
+  color: #434a54;
+}
+
+#aqua .top-most-menu a:hover {
+  color: #30A8CC;
 }
 
 #aqua .txt-color {
-  color: #415dd4;
+  color: #30a800;
 }
 
 #aqua .plan-chart span {
   background-color: #30A8CC;
 }
 
+#aqua .navbar-default {
+  background-color: #30A8CC;
+}
+
 #aqua #main-menu .navbar-nav li > a {
-  color: #eff1f3;
-  background: #04708f;
-  box-shadow: inset -1px -2px 5px 0 #434a54;
+  color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 #aqua #main-menu .navbar-nav li.active > a, #aqua #main-menu .navbar-nav li > a:hover, #aqua #main-menu .navbar-nav li > a:active {
-  background: #047393;
+  background: transparent;
   color: #fff;
+  border-color: #ff9b35;
 }
 
 #aqua #main-menu .navbar-nav li.active > a, #aqua #main-menu .navbar-nav li > a:hover {
-  box-shadow: none;
   border-color: #656d78;
 }
 
@@ -409,12 +642,30 @@ li.anim-slide h1 {
   color: #fff;
 }
 
+#aqua #small-pricing .col-md-4:nth-child(2) .each-small-pricing {
+  border: 2px solid #434a54;
+}
+
 #aqua #small-pricing .col-md-4:nth-child(2) .small-plan-badge {
   background-color: #047393;
 }
 
 #aqua #small-pricing .col-md-4:nth-child(2) .small-plan-badge:before, #aqua #small-pricing .col-md-4:nth-child(2) .small-plan-badge:after {
   border-bottom-color: #047393;
+}
+
+#aqua #small-pricing .col-md-4:nth-child(2) .small-plan-price {
+  color: #047393;
+}
+
+#aqua #small-pricing .col-md-4:nth-child(2) .btn {
+  background-color: #30A8CC;
+  border: 2px solid transparent;
+}
+
+#aqua #small-pricing .col-md-4:nth-child(2) .btn:hover {
+  background-color: #ff9b35;
+  border-color: #434a54;
 }
 
 #aqua #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -426,6 +677,21 @@ li.anim-slide h1 {
 }
 
 #aqua #small-pricing .small-plan-price {
+  color: #ffc335;
+}
+
+#aqua footer {
+  background-color: #434a54;
+  color: #fff;
+}
+
+#aqua footer ul.nav li > a {
+  background-color: #ffc335;
+  color: #fff;
+}
+
+#aqua footer ul.nav li > a:hover {
+  background-color: #eff1f3;
   color: #ffc335;
 }
 
@@ -456,14 +722,9 @@ li.anim-slide h1 {
   background: #eff1f3;
 }
 
-#main-menu .navbar-nav li {
-  padding: 10px 5px;
-}
-
 #main-menu .navbar-nav li > a {
-  padding: 6px 10px;
-  border: 1px solid transparent;
-  border-radius: 3px;
+  margin: 9px 8px;
+  padding: 9px 5px;
 }
 
 @media (min-width: 768px) {
@@ -527,7 +788,7 @@ li.anim-slide .container ul > li {
 
 /* small plan */
 .each-small-pricing {
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 5px 10px;
   position: relative;
 }
@@ -540,6 +801,19 @@ li.anim-slide .container ul > li {
   .each-small-pricing {
     display: inline-block;
   }
+}
+
+#small-pricing {
+  margin-top: 100px;
+}
+
+#small-pricing .col-md-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#small-pricing .col-md-4:nth-child(2) {
+  margin-top: -35px;
 }
 
 #small-pricing .col-md-4:nth-child(2) .small-plan-badge, #small-pricing .col-md-4:nth-child(3) .small-plan-badge {
@@ -668,6 +942,14 @@ li.anim-slide .container ul > li {
   overflow-x: auto;
 }
 
+#detailed-plan tr th:first-child, #detailed-plan tr td:first-child {
+  width: 40%;
+}
+
+#detailed-plan tr th:not(:first-child), #detailed-plan tr td:not(:first-child) {
+  width: 20%;
+}
+
 .each-feature {
   margin-bottom: 25px;
 }
@@ -711,4 +993,33 @@ li.anim-slide .container ul > li {
 
 .customer-slider .anim-slide * {
   position: initial;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer ul.nav {
+  display: inline-block;
+}
+
+footer ul.nav li {
+  float: left;
+}
+
+footer ul.nav li:not(:last-child) {
+  margin-right: 5px;
+}
+
+footer ul.nav li > a {
+  border-radius: 3px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+}
+
+footer .copyright p {
+  margin: 0;
+  line-height: 50px;
 }
