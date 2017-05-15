@@ -8,25 +8,23 @@ $top-most-nav-height: 70px
 	z-index: 1015
 
 .top-most-menu
+	.logo
+		padding: 6px 0
 	.navbar-brand
-		padding: 5px 0
+		padding: 5px 15px
 		img
 			height: 100%
-	.nav>li>a
-		color: $darkest-gray
+	.navbar-right
+		padding-top: 18px
 		font-size: 17px
-	.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
-		background: $light-gray
+		>li
+			float: left
 
 #main-menu
 	.navbar-nav
-		//li
-			padding: 10px 5px
 		li>a
 			margin: 9px 8px
 			padding: 9px 5px
-		
-		//border: none !important
 			
 			
 @media (min-width: 768px)
@@ -34,8 +32,8 @@ $top-most-nav-height: 70px
 		.navbar-brand
 			height: $top-most-nav-height
 		.navbar-nav>li>a
-			padding-top: ($top-most-nav-height - 20)/2
-			padding-bottom: ($top-most-nav-height - 20)/2
+			padding-top: ($top-most-nav-height - 40)/2
+			padding-bottom: ($top-most-nav-height - 40)/2
 		.dropdown-menu
 			min-width: 20px
 	.navbar-default
@@ -45,3 +43,21 @@ $top-most-nav-height: 70px
 			display: inline-block
 	#main-menu
 		height: 50px!important
+		
+@media (max-width: 767px)
+	.top-most-menu
+		.navbar-right
+			padding-top: 0
+			display: flex
+			li
+				flex: 1
+				&:nth-child(3)
+					position: absolute !important
+					top: 15px
+					right: 0
+	#main-menu
+		.navbar-nav
+			li>a
+				display: inline-block
+	#banner
+		display: none

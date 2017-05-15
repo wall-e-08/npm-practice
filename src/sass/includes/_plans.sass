@@ -23,25 +23,25 @@ $best_pseudo_left_right: 84px
 
 #small-pricing
 	margin-top: 100px
-	.col-md-4
+	.each-small-plan-parent
 		$pad-l-r: 5px
 		padding-left: $pad-l-r
 		padding-right: $pad-l-r
-	.col-md-4:nth-child(2)
-		margin-top: -35px
-	.col-md-4:nth-child(2), .col-md-4:nth-child(3)
-		.small-plan-badge
-			padding: $topSeller_pad-t $topSeller_pad-b
-		.small-plan-badge:before,  .small-plan-badge:after
-			content: ''
-			position: absolute
-			display: block
-			border: $topSeller_pseudo_border_width solid
-			bottom: 0
-			z-index: -1
-			border-left-color: transparent
-			border-right-color: transparent
-			border-top-color: transparent
+		&:nth-child(2)
+			margin-top: -35px
+		&:nth-child(2), &:nth-child(3)
+			.small-plan-badge
+				padding: $topSeller_pad-t $topSeller_pad-b
+				&:before,  &:after
+					content: ''
+					position: absolute
+					display: block
+					border: $topSeller_pseudo_border_width solid
+					bottom: 0
+					z-index: -1
+					border-left-color: transparent
+					border-right-color: transparent
+					border-top-color: transparent
 	.small-plan-badge
 		font-size: $badge_font_sz
 		font-weight: bold
@@ -49,22 +49,33 @@ $best_pseudo_left_right: 84px
 		top: $badge_top_right
 		right: $badge_top_right
 		transform: translate(50%, -50%) rotateZ(45deg)
-		
+	.each-small-plan-parent
+		&:nth-child(2)
+			.small-plan-badge
+				&:after
+					right: $topSeller_pseudo_left_right
+				&:before
+					left: $topSeller_pseudo_left_right
+		&:nth-child(3)
+			.small-plan-badge
+				&:after
+					right: $best_pseudo_left_right
+				&:before
+					left: $best_pseudo_left_right
 
-
-#small-pricing
-	.col-md-4:nth-child(2)
+$small-plan-name-margin-top: 50px
+@media (max-width: 767px)
+	#small-pricing
+		margin-top: 38px
+		.each-small-plan-parent
+			&:first-child
+				margin-bottom: 35px
+			&:not(:first-child)
+				.small-plan-name
+					margin-top: $small-plan-name-margin-top
 		.small-plan-badge
-			&:after
-				right: $topSeller_pseudo_left_right
-			&:before
-				left: $topSeller_pseudo_left_right
-	.col-md-4:nth-child(3)
-		.small-plan-badge
-			&:after
-				right: $best_pseudo_left_right
-			&:before
-				left: $best_pseudo_left_right
+			transform: none !important
+			top: $small-plan-name-margin-top/2 !important
 
 
 .plan-chart, .small-plan-name h3, #detailed-plan th h3
@@ -82,7 +93,7 @@ $best_pseudo_left_right: 84px
 
 
 =plan-chart($_childName)
-	.col-md-4:nth-child(#{$_childName}), .plan-table-parent th:nth-child(#{$_childName + 1})
+	.each-small-plan-parent:nth-child(#{$_childName}), .plan-table-parent th:nth-child(#{$_childName + 1})
 		.plan-chart
 			@for $i from 1 through 3
 				span:nth-child(#{$i})

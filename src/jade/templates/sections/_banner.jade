@@ -2,21 +2,28 @@
 	.container-fluid
 		.row
 			.slider
+				-var _leftPos = 200
 				.slide
-					h1(data-position="100,100",data-step="0",data-in="left",data-out="right") Dedicated server with free Memory card
-					h3(data-position="180,30",data-in="bottom",data-out="top",data-step="1",data-delay="500") Get up to 56% OFF WordPress Hosting
-					ul(data-position="0,300",data-in="top",data-step="2",data-delay="3500")
-						-each offer in offer_lists
-							li= offer
+					h1(data-position="50,#{_leftPos}",data-step="0",data-in="left",data-out="fade") Dedicated server with free Memory card
+					h3(data-position="100,#{_leftPos}",data-in="bottom",data-out="fade",data-step="1",data-delay="500") Get up to 56% OFF WordPress Hosting
+					ul(data-position="150,#{_leftPos}",data-in="top",data-out="fade",data-step="2",data-delay="500")
+						li FAST Web Hosting with FREE SSDs
+						li FREE 1-click installer with 400+ applications
+						li FREE cPanel for easy server management
+						li GET free space for 1 day trial
 				.slide
-					h1(data-position="0,300",data-in="left",data-step="0",data-delay="500") Dedicated server with free Memory card
-					h3(data-position="180,30",data-in="bottom",data-step="1",data-delay="500") Get up to 56% OFF WordPress Hosting
-					ul(data-position="180,30",data-in="bottom",data-step="2",data-delay="500")
-						-each offer in offer_lists
-							li= offer
+					h1(data-position="50,#{_leftPos}",data-in="left",data-out="fade",data-step="0") Dedicated server with free Memory card
+					h3(data-position="100,#{_leftPos}",data-in="bottom",data-out="fade",data-step="1",data-delay="300") Get up to 56% OFF WordPress Hosting
+					ul(data-position="150,#{_leftPos}",data-in="bottom",data-out="fade",data-step="2",data-delay="200")
+						li FAST Web Hosting with FREE SSDs
+						li FREE 1-click installer with 400+ applications
+						li FREE cPanel for easy server management
+						li GET free space for 1 day trial
 				.slide
-					h1.xaxa2 Dedicated server with free Memory card
-					h3#test2 Get up to 56% OFF WordPress Hosting
-					ul.offers2
-						-each offer in offer_lists
-							li= offer
+					h1(data-position="50,#{_leftPos}",data-in="left",data-out="fade",data-step="0") Dedicated server with free Memory card
+					h3(data-position="100,#{_leftPos}",data-in="bottom",data-out="fade",data-step="1",data-delay="300") Get up to 56% OFF WordPress Hosting
+					ul(data-position="150,#{_leftPos}",data-in="bottom",data-out="fade",data-step="2",data-delay="200")
+						li FAST Web Hosting with FREE SSDs
+						li FREE 1-click installer with 400+ applications
+						li FREE cPanel for easy server management
+						li GET free space for 1 day trial

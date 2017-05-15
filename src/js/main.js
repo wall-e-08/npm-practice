@@ -1,4 +1,5 @@
 (function ($) {
+
 	$(document).ready(function () {
 
 
@@ -32,27 +33,32 @@
 			_this.height(_maxHeight);   //set height
 		};
 
-		$('.each-small-pricing').matchHeight();
+		if ($(window).outerHeight() > 991)
+			$('.each-small-pricing').matchHeight();
+
 		$('.each-feature').matchHeight();
+
+
 
 	});
 
 	$(window).load(function () {
 
-		$('.slider').fractionSlider({
-			'fullWidth': 			true,
-			'controls': 			false,
-			'pager': 				true,
-			'responsive': 			true,
-			'dimensions': 			"1000,400",
-			'increase': 			false,
-			'pauseOnHover': 		true
-		});
+		sliderLoad();
 
 	});
 
-
-
+	var sliderLoad = function () {
+		var _w = parseInt($(this).outerWidth());
+		$('.slider').fractionSlider({
+			'fullWidth':		true,
+			'controls': 		false,
+			'pager': 			true,
+			'responsive':		true,
+			'dimensions': 		_w +", 400",
+			'increase': 		false
+		});
+	}
 
 
 })(jQuery);

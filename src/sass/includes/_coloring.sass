@@ -24,6 +24,11 @@ li.anim-slide h1
 	padding-top: 20px
 	padding-bottom: 20px
 	
+.top-most-menu
+	.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+		background: $light-gray
+	.nav>li>a
+		color: $darkest-gray
 	
 =theme($_primary, $_secondary, $_base-1, $_base-2, $_btn)
 	a
@@ -47,6 +52,12 @@ li.anim-slide h1
 			background-color: $_primary
 	.navbar-default
 		background-color: $_primary
+
+	.navbar-default
+		.navbar-toggle
+			background-color: $_btn
+			&:focus, &:hover
+				background-color: $_btn
 	#main-menu
 		.navbar-nav
 			li>a
@@ -67,7 +78,7 @@ li.anim-slide h1
 	#small-pricing
 		.small-plan-badge
 			color: $white
-		.col-md-4:nth-child(2)
+		.each-small-plan-parent:nth-child(2)
 			.each-small-pricing
 				border: 2px solid $darkest-gray
 			.small-plan-badge
@@ -82,7 +93,7 @@ li.anim-slide h1
 			.btn:hover
 				background-color: $_btn
 				border-color: $darkest-gray
-		.col-md-4:nth-child(3)
+		.each-small-plan-parent:nth-child(3)
 			.small-plan-badge
 				background-color: $_base-1
 			.small-plan-badge:before, .small-plan-badge:after
@@ -100,7 +111,22 @@ li.anim-slide h1
 				background-color: $light-gray
 				color: $_base-1
 
+.navbar-default
+	.navbar-toggle
+		border: none !important
+		.icon-bar
+			background-color: $white
 
+@media (max-width: 767px)
+	.top-most-menu
+		.navbar-right
+			>li
+				&:not(:nth-child(3))
+					margin: 0 5px
+					>a
+						background-color: $light-gray
+						&:hover
+							background-color: $dark-gray
 
 		
 
