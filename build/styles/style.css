@@ -2,7 +2,7 @@
   position: fixed;
   right: -140px;
   top: 20px;
-  z-index: 5000;
+  z-index: 10000;
 }
 
 #theme .theme-wrapper {
@@ -67,6 +67,59 @@
 
 .colorbox-open {
   right: 5px !important;
+}
+
+#logo-changer {
+  position: fixed;
+  left: -350px;
+  top: 20px;
+  z-index: 10000;
+}
+
+#logo-changer .logo-changer-wrapper {
+  position: relative;
+  width: 350px;
+}
+
+#logo-changer .logo-changer-wrapper .change-logo {
+  width: 50px !important;
+  height: auto !important;
+  color: #333;
+  position: absolute;
+  right: -60px;
+  background: #fff;
+  border: 0.5px solid #656d78;
+}
+
+#logo-changer .logo-changer-wrapper .change-logo h1 {
+  margin: 0;
+}
+
+#logo-changer .logo-changer-wrapper .change-logo:hover {
+  color: #000;
+  border-color: #fff;
+  box-shadow: 0 0 5px #656d78;
+}
+
+#logo-changer .logo-changer-wrapper .all-logos {
+  background: #aab2bd;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+#logo-changer .logo-changer-wrapper .all-logos button.btn {
+  width: 100px;
+  height: 70px;
+  padding: 0;
+  margin: 5px;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.logobox-open {
+  left: 5px !important;
 }
 
 body {

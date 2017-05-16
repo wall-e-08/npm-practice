@@ -1,0 +1,8 @@
+#logo-changer.transition
+	.logo-changer-wrapper
+		button.btn.transition.change-logo
+			h1 i
+		.all-logos
+			-for (i=1; i<12; i++)
+				button.btn
+					img(src="img/logo/logo-#{i}.png")

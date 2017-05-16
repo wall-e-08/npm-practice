@@ -1,0 +1,43 @@
+$btn-width: 100px
+$btn-height: 70px
+$btn-gap: 10px
+$main-btn-width: 50px
+$wrapper-width: $btn-width*3 + $btn-gap*5
+#logo-changer
+	position: fixed
+	left: - $wrapper-width
+	top: 20px
+	z-index: 10000
+	.logo-changer-wrapper
+		position: relative
+		width: $wrapper-width
+		.change-logo
+			width: $main-btn-width !important
+			height: auto !important
+			color: #333
+			position: absolute
+			right: -($main-btn-width + $btn-gap)
+			background: $white
+			border: 0.5px solid $darker-gray
+			h1
+				margin: 0
+			&:hover
+				color: #000
+				border-color: $white
+				box-shadow: 0 0 5px $darker-gray
+		.all-logos
+			background: $dark-gray
+			padding: $btn-gap
+			display: flex
+			flex-wrap: wrap
+			border-radius: 5px
+			button.btn
+				width: $btn-width
+				height: $btn-height
+				padding: 0
+				margin: $btn-gap/2
+				border: 1px solid $white
+				background: transparent
+
+.logobox-open
+	left: 5px !important
