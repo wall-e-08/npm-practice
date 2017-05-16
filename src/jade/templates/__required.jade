@@ -12,7 +12,7 @@
 
 -var googleFont = '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Ubuntu:400,700'
 
--var logoUrl = "img/logo.jpg"
+-var logoUrl = "img/logo/logo-1.png"
 
 
 
@@ -56,8 +56,8 @@ mixin PlanTitle (_iteration)
 
 
 //- customer's data
--var customerImgUrlPrefix = "https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/"
--
+//-var customerImgUrlPrefix = "https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/"
+//-
 	var customers = [
 		{
 			"name" : "john snow",
@@ -78,16 +78,61 @@ mixin PlanTitle (_iteration)
 
 
 //- migration data
--var mainImgUrl = "//imh01-inmotionhosting1.netdna-ssl.com/img/business/web-migration-vert.png"
--var imgUrlPrefix = "//imh01-inmotionhosting1.netdna-ssl.com/img/"
+-var mainImgUrl = "img/migration/full-migration.png"
+-var imgUrlPrefix = "img/migration/"
 -
 	var migrationImageData = [
-		{"imgUrl" : imgUrlPrefix + "files-circle.png", 		"title" : "Site Files"},
-		{"imgUrl" : imgUrlPrefix + "database-circle.png",	"title" : "Databases"},
-		{"imgUrl" : imgUrlPrefix + "cpanel-circle.png",		"title" : "cPanel Setting"},
-		{"imgUrl" : imgUrlPrefix + "domain-circle.png",		"title" : "Domain Records"},
-		{"imgUrl" : imgUrlPrefix + "email-circle.png",		"title" : "Email Accounts"}
+		{"imgUrl" : imgUrlPrefix + "folder.png", 		"title" : "Site Files"},
+		{"imgUrl" : imgUrlPrefix + "db.png",			"title" : "Databases"},
+		{"imgUrl" : imgUrlPrefix + "dns.png",			"title" : "DNS"},
+		{"imgUrl" : imgUrlPrefix + "hosting.png",		"title" : "From any hosting"},
+		{"imgUrl" : imgUrlPrefix + "email.png",			"title" : "Email (*)"}
 	]
+
+
+
+
+//- service data
+-var serviceImgUrlPrefix = "img/service/"
+-
+	var serviceData = [
+		{
+		"imgUrl" : serviceImgUrlPrefix + "auto-backup.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "cpanel.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "database.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "domains.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "emails.png",
+			"content" : "DLorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?S"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "secured.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "server.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "site-transfer.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "ssd-speed.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "ssh-access.png",
+			"content" : "From Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum? hosting"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "support.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},{
+			"imgUrl" : serviceImgUrlPrefix + "uptime.png",
+			"content" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?"
+		},]
 
 
 //- Detailed plan
@@ -124,3 +169,5 @@ mixin PlanTitle (_iteration)
 		["ecommerce" , "Magento xaxakvdfsjdf"],
 		["mysql" , "Magento xaxakvdfsjdf"]
 	]
+
+

@@ -35,8 +35,10 @@
 			//$('body').removeAttr('id').attr('id', _color);
 			var _this = $(this);
 			var _index = _this.index() + 1;
+			var _logoUrl = 'img/logo/logo-' + _index + '.png';
 
-			_this.children('img').removeAttr('src').attr('src','img/logo/logo-' + _index + '.png');
+			$('a.navbar-brand>img').removeAttr('src').attr('src', _logoUrl);
+			_this.children('img').removeAttr('src').attr('src', _logoUrl);
 			$('.favicon').removeAttr('href').attr('href','img/favicon/fav-' + _index + '.png');
 		});
 

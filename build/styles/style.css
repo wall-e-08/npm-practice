@@ -210,6 +210,16 @@ li.anim-slide h1 {
   }
 }
 
+#orange ::selection {
+  background-color: #fc6e51;
+  color: #fff;
+}
+
+#orange ::-moz-selection {
+  background-color: #fc6e51;
+  color: #fff;
+}
+
 #orange a {
   color: #fc6e51;
 }
@@ -330,6 +340,16 @@ li.anim-slide h1 {
 #orange footer ul.nav li > a:hover {
   background-color: #eff1f3;
   color: #37829E;
+}
+
+#yellow ::selection {
+  background-color: #ffc754;
+  color: #fff;
+}
+
+#yellow ::-moz-selection {
+  background-color: #ffc754;
+  color: #fff;
 }
 
 #yellow a {
@@ -454,6 +474,16 @@ li.anim-slide h1 {
   color: #4562AB;
 }
 
+#green ::selection {
+  background-color: #a0d468;
+  color: #fff;
+}
+
+#green ::-moz-selection {
+  background-color: #a0d468;
+  color: #fff;
+}
+
 #green a {
   color: #a0d468;
 }
@@ -574,6 +604,16 @@ li.anim-slide h1 {
 #green footer ul.nav li > a:hover {
   background-color: #eff1f3;
   color: #ea8e73;
+}
+
+#mint ::selection {
+  background-color: #48cfad;
+  color: #fff;
+}
+
+#mint ::-moz-selection {
+  background-color: #48cfad;
+  color: #fff;
 }
 
 #mint a {
@@ -698,6 +738,16 @@ li.anim-slide h1 {
   color: #ffc059;
 }
 
+#aqua ::selection {
+  background-color: #30A8CC;
+  color: #fff;
+}
+
+#aqua ::-moz-selection {
+  background-color: #30A8CC;
+  color: #fff;
+}
+
 #aqua a {
   color: #30A8CC;
 }
@@ -818,6 +868,16 @@ li.anim-slide h1 {
 #aqua footer ul.nav li > a:hover {
   background-color: #eff1f3;
   color: #ffc335;
+}
+
+#test ::selection {
+  background-color: #dbdfef;
+  color: #fff;
+}
+
+#test ::-moz-selection {
+  background-color: #dbdfef;
+  color: #fff;
 }
 
 #test a {
@@ -1272,6 +1332,10 @@ li.anim-slide .container ul > li {
   }
 }
 
+#site-migration .migration-map-img img {
+  height: 270px;
+}
+
 #site-migration .migration-details .nav > li {
   padding: 5px 5px;
 }
@@ -1282,6 +1346,7 @@ li.anim-slide .container ul > li {
 }
 
 #site-migration .email-migration {
+  margin-top: 20px;
   font-size: 12px;
   font-style: italic;
 }
@@ -1295,8 +1360,16 @@ li.anim-slide .container ul > li {
   }
 }
 
-.all-services > div[class^="col-md-"] {
-  margin-bottom: 30px;
+#service .all-services > div[class^="col-md-"] {
+  margin-bottom: 50px;
+}
+
+#service .service-img-wrapper {
+  text-align: right;
+}
+
+#service .service-img-wrapper img {
+  width: 80px;
 }
 
 .customer-slider .anim-slide * {

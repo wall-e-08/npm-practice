@@ -4,11 +4,10 @@ section#service.dark-bg.mt-50
 			h1.text-uppercase why choose us
 			p Shared Hosting That's Better Than Our Competition
 		.row.mt-50.all-services
-			-for (i=0; i<8; i++)
+			each value in serviceData
 				.col-md-6
-					.row
-						.col-xs-4
-							.service-img-wrapper
-								img(src="https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/200-200-pixels.png")
-						.col-xs-8
-							|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum delectus deserunt illum, laboriosam repellat vero? Aliquam debitis magni modi placeat possimus quas quia, rerum?
+						.row
+							.col-xs-4
+								.service-img-wrapper
+									img(src= value['imgUrl'])
+							.col-xs-8= value['content']
