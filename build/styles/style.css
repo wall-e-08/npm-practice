@@ -1095,47 +1095,39 @@ li.anim-slide h1 {
   }
 }
 
-#banner ul {
-  padding: 0;
-  margin: 0;
+#banner {
+  background-image: url("../img/static-bg.png");
+  padding-bottom: 30px;
 }
 
-.slider .slide:nth-child(1) {
-  background: url("../img/slider-bg-1.png");
-}
-
-.slider .slide:nth-child(2) {
-  background: url("../img/slider-bg-2.png");
-}
-
-.slider .slide:nth-child(3) {
-  background: url("../img/slider-bg-3.png");
-}
-
-.banner-slider nav.anim-arrows span[class^="anim-arrows-"] {
-  color: #ae0;
-  font-size: 40px;
-}
-
-.banner-slider nav.anim-arrows span[class^="anim-arrows-"]:after {
-  content: none;
-}
-
-li.anim-slide .container {
+#banner .container {
   position: relative;
 }
 
-li.anim-slide .container h3 {
-  top: 55px;
+#banner img.server-pc {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-li.anim-slide .container ul {
-  top: 130px;
+#banner .txt-shadow {
+  color: #f2a641;
+  text-shadow: 1px 2px #05283c;
 }
 
-li.anim-slide .container ul > li {
-  position: initial;
-  text-align: left;
+#banner .strike {
+  text-decoration: line-through;
+}
+
+#banner ul.banner-offer-list {
+  font-size: 17px;
+  margin: 30px 0;
+}
+
+#banner .promotion {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* small plan */

@@ -1,0 +1,19 @@
+#banner
+	.container
+		img.server-pc(src="img/server.png")
+		.row
+			h1.txt-shadow.banner-heading= bannerMainText
+			h3.banner-sub-heading
+				span= bannerSubHeading1
+				span.highlighted-text= bannerSubHeadingHighlighted
+				span= bannerSubHeading3
+			ul.banner-offer-list
+				each offer in offer_lists
+					li= offer
+			h4.promotion
+				span.text-uppercase.bold= promotion1
+				span= promotion2
+				span.strike= promotionStrikedCost
+				span.txt-shadow= promotionOfferedCost
+			.banner-btn
+				a.btn.text-capitalize read more
