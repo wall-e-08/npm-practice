@@ -89,7 +89,7 @@ var StopChange;
 	StartChange = function () {
 		$('.admin-only').show();
 	};
-	\StopChange = function () {
+	StopChange = function () {
 		$('.admin-only').hide();
 	}
 
