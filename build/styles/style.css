@@ -155,6 +155,10 @@ img {
   transition: all 0.3s;
 }
 
+.admin-only {
+  display: none;
+}
+
 .white-bg {
   background-color: #fff;
 }

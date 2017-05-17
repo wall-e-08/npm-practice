@@ -1,3 +1,6 @@
+var StartChange;
+var StopChange;
+
 (function ($) {
 
 	$(document).ready(function () {
@@ -80,6 +83,14 @@
 			'dimensions': 		_w +", 400",
 			'increase': 		false
 		});
+	}
+
+
+	StartChange = function () {
+		$('.admin-only').show();
+	};
+	\StopChange = function () {
+		$('.admin-only').hide();
 	}
 
 
