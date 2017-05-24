@@ -24,8 +24,8 @@
 -var bannerSubHeading3 = ''
 -var promotion1 = "Hosting Plan"
 -var promotion2 = " starting at  "
--var promotionStrikedCost = "৳ 800"
--var promotionOfferedCost = "  ৳ 400"
+-var promotionStrikedCost = "৳ 1000"
+-var promotionOfferedCost = "  ৳ 700"
 -
 	var offer_lists = [
 		"99.99% Uptime",
@@ -38,15 +38,22 @@
 
 
 //- plans data
--var planType = ["", "Free", "Student", "Business"]    //-used blank in first place, because there's no heading for description
+-var planType = ["", "Starter", "Pro", "Business"]    //-used blank in first place, because there's no heading for description
 -
 	var planData = [
-		["sitehsdgahjsdgas", "00", "01", "02"],
-		["something", "10", "11", "12"],
-		["zzz", false, false, true],
-		["amount", "5", "20", "500"],
-		["help", false, true, true],
-		["domain", "200", "500", "80045"]
+		["Disk Space", "3 GB", "8 GB", "15 GB"],
+		["Dedicated RAM", "1 GB", "2 GB", "4 GB"],
+		["Domains", "2", "5", "10"],
+		["Sub-Domains", "4", "10", "Unlimited"],
+		["MySQL & PostgreSQL", "10", "Unlimited", "Unlimited"],
+		["Email Accounts", "Unlimited", "Unlimited", "Unlimited"],
+		["Plesk", true, true, true],
+ 		["SSH Access", false, true, true],
+ 		["Backup", true, true, true],
+ 		["Spam Filter", true, true, true],
+ 		["Malware Protection", true, true, true],
+ 		["DDOS Protection", true, true, true],
+ 		["Phone Support", true, true, true],
 	]
 
 mixin PlanMarking(_param)
