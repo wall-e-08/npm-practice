@@ -62,6 +62,7 @@ var StopChange;
 			$('.each-small-pricing').matchHeight();
 
 		$('.each-feature').matchHeight();
+		$('.all-services .col-md-3').matchHeight();
 
 
 
