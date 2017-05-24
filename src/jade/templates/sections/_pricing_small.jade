@@ -2,24 +2,23 @@ section#small-pricing
 	//- small pricing doesn't mean low costing plan/pricing, it's the size !!
 	.container
 		.row.text-center
-			each badge_txt in [["",planType[1]], ["Top Seller",planType[2]], ["Best value",planType[3]]]
+			each badge_txt in smallPlanData
 				.col-sm-4.each-small-plan-parent
 					.each-small-pricing
 						.small-plan-badge.text-center
-							span= badge_txt[0]
+							span= badge_txt["badge"]
 						.small-plan-name
 							.plan-chart
 								-for (j=0; j<3; j++)
 									span
-							h3.text-uppercase= badge_txt[1]
-						p.small-plan-description shared hosting for all skill levels
+							h3.text-uppercase= badge_txt["planType"]
+						p.small-plan-description= badge_txt["planDetails"]
 						.small-plan-price
-							sup $
-							|30
-							sup 99
-							sub /mo.
+							sup= bdtSign
+							=badge_txt["price"]*(100 - badge_txt["discount"])/100
+							span /mo.
 						.small-plan-offer
 							strike
-								span $10.99$/mo
-							span.text-uppercase 90% off!
+								span #{bdtSign}#{badge_txt["price"]}/mo
+							span.text-uppercase    #{badge_txt["discount"]}% off!
 						a.btn.btn-order.text-uppercase order now

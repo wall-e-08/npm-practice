@@ -89,10 +89,13 @@ var StopChange;
 
 	StartChange = function () {
 		$('.admin-only').show();
+		console.log("Close the console now, change the color & logo. Have fun !!!")
 	};
 	StopChange = function () {
 		$('.admin-only').hide();
+		console.log("Changing option is turned off, to change again type 'StartChange();' in console. GoodBye!")
 	}
 
+	console.warn("To change color and logo type 'StartChange();' here and enter");
 
 })(jQuery);

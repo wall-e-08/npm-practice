@@ -284,6 +284,10 @@ li.anim-slide h1 {
   border-color: #656d78;
 }
 
+#orange #banner .txt-shadow {
+  color: #37829E;
+}
+
 #orange .each-small-pricing {
   border: 1px solid #aab2bd;
   background-color: #eff1f3;
@@ -414,6 +418,10 @@ li.anim-slide h1 {
 
 #yellow #main-menu .navbar-nav li.active > a, #yellow #main-menu .navbar-nav li > a:hover {
   border-color: #656d78;
+}
+
+#yellow #banner .txt-shadow {
+  color: #4562AB;
 }
 
 #yellow .each-small-pricing {
@@ -548,6 +556,10 @@ li.anim-slide h1 {
   border-color: #656d78;
 }
 
+#green #banner .txt-shadow {
+  color: #ea8e73;
+}
+
 #green .each-small-pricing {
   border: 1px solid #aab2bd;
   background-color: #eff1f3;
@@ -678,6 +690,10 @@ li.anim-slide h1 {
 
 #mint #main-menu .navbar-nav li.active > a, #mint #main-menu .navbar-nav li > a:hover {
   border-color: #656d78;
+}
+
+#mint #banner .txt-shadow {
+  color: #ffc059;
 }
 
 #mint .each-small-pricing {
@@ -812,6 +828,10 @@ li.anim-slide h1 {
   border-color: #656d78;
 }
 
+#aqua #banner .txt-shadow {
+  color: #ffc335;
+}
+
 #aqua .each-small-pricing {
   border: 1px solid #aab2bd;
   background-color: #eff1f3;
@@ -942,6 +962,10 @@ li.anim-slide h1 {
 
 #test #main-menu .navbar-nav li.active > a, #test #main-menu .navbar-nav li > a:hover {
   border-color: #656d78;
+}
+
+#test #banner .txt-shadow {
+  color: #3ada56;
 }
 
 #test .each-small-pricing {
@@ -1116,7 +1140,6 @@ li.anim-slide h1 {
 }
 
 #banner .txt-shadow {
-  color: #f2a641;
   text-shadow: 1px 2px #05283c;
 }
 
@@ -1137,7 +1160,7 @@ li.anim-slide h1 {
 /* small plan */
 .each-small-pricing {
   border-radius: 8px;
-  padding: 5px 10px;
+  padding: 15px 10px 25px;
   position: relative;
 }
 

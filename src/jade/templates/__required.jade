@@ -34,8 +34,7 @@
 		"Plesk for easier control",
 		"SSH access"
 	]
-
-
+-var bdtSign = "৳"
 
 //- plans data
 -var planType = ["", "Starter", "Pro", "Business"]    //-used blank in first place, because there's no heading for description
@@ -70,7 +69,30 @@ mixin PlanTitle (_iteration)
 			-for (_j=0; _j<3; _j++)
 				span
 		h3.text-uppercase= planType[_iteration]
+//- small Plan's Data
 
+-
+	var smallPlanData = [
+		{
+		"badge": " ",
+		"planType" : planType[1],
+		"planDetails" : "shared hosting for all skill levels",
+		"discount" : 30,
+		"price" : 1000
+		},{
+		"badge": "Top Seller",
+		"planType" : planType[2],
+		"planDetails" : "shared hosting for all skill levels",
+		"discount" : 40,
+		"price" : 2000
+		},{
+		"badge": "Best value",
+		"planType" : planType[3],
+		"planDetails" : "shared hosting for all skill levels",
+		"discount" : 50,
+		"price" : 3500
+		}
+	]
 
 //- customer's data
 //-var customerImgUrlPrefix = "https://blog.addthiscdn.com/wp-content/uploads/2016/03/01125908/"
@@ -114,7 +136,7 @@ mixin PlanTitle (_iteration)
 -
 	var serviceData = [
 		{
-		"imgUrl" : serviceImgUrlPrefix + "auto-backup.png",
+			"imgUrl" : serviceImgUrlPrefix + "auto-backup.png",
 			"content" : "Plesk backup system provides easier process for a quick backup of your valuable files"
 		},{
 			"imgUrl" : serviceImgUrlPrefix + "cpanel.png",
