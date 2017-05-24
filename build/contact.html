@@ -1,28 +1,24 @@
-<!DOCTYPE html>
+
+<!--include templates/__doctype_and_variables--><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title>Concitus Hosting</title>
+		<title>Oikik Hosting Ltd.</title>
 		<link rel="stylesheet" href="style-min/main.min.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i|Ubuntu:400,700">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Ubuntu:400,700">
+		<link rel="shortcut icon" type="image/png" href="img/favicon/fav-1.png" class="favicon">
 	</head>
-	<body>
+	<body id="orange">
 		<header>
 			<nav class="navbar top-most-menu">
 				<div class="container">
-					<div class="navbar-header logo"><a href="#" class="navbar-brand"><img src="img/logo.jpg"></a></div>
+					<div class="navbar-header logo"><a href="#" class="navbar-brand"><img src="img/logo/logo-1.png"></a></div>
 					<div class="text-center">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="text-capitalize"><a href="#">Contact</a></li>
-							<li class="text-capitalize"><a href="#">login</a></li>
-							<li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">lang(EN)<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="#">EN</a></li>
-									<li><a href="#">BN</a></li>
-								</ul>
-							</li>
-							<li class="text-capitalize"><a href="#">call us</a></li>
+							<li class="text-capitalize"><a href="contact.html">Contact</a></li>
+							<li class="text-capitalize"><a href="login.html">login</a></li>
+							<li class="text-capitalize"><a href="tel:+88017235941615" class="call-phone">Call Us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -30,51 +26,41 @@
 			<nav class="navbar navbar-default">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						<button type="button" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
 					</div>
-					<div id="main-menu" class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">item 1</a></li>
-							<li><a href="#">item 2</a></li>
-							<li><a href="#">item 3</a></li>
-							<li><a href="#">item 4</a></li>
-							<li><a href="#">item 5</a></li>
-							<li><a href="#">item 6</a></li>
+					<div id="main-menu" class="collapse navbar-collapse text-center">
+						<ul class="nav navbar-nav text-uppercase">
+							<li class="active"><a href="#banner" class="transition">home</a></li>
+							<li><a href="#small-pricing" class="transition">plan</a></li>
+							<li><a href="#features" class="transition">features</a></li>
+							<li><a href="#service" class="transition">service</a></li>
+							<li><a href="#detailed-plan" class="transition">buy</a></li>
+							<li><a href="#site-migration" class="transition">benifits</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<section id="contact">
+		<!--include templates-->
+		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<form class="form-horizontal">
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input id="inputMail" type="email" placeholder="E-mail" class="form-control">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<textarea rows="3" placeholder="Message" class="form-control"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<button type="submit" class="btn btn-default">Send</button>
-								</div>
-							</div>
-						</form>
+					<div class="col-md-6">
+						<div class="copyright text-center">
+							<p> All rights reserved to&nbsp<span>copyright © 2017&nbsp<a href="mailto:contact@conciitus.com" class="text-capitalize">concitus</a></span></p>
+						</div>
+					</div>
+					<div class="col-md-6 text-center">
+						<ul class="nav">
+							<li><a href="#" class="transition"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="transition"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="transition"><i class="fa fa-skype"></i></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</section>
-		<footer>
-			<div class="container">
-				<p>All rights reserved to&nbsp<span><a href="mailto:contact@conciitus.com">concitus</a></span>&nbsp007</p>
-			</div>
 		</footer>
+		<script src="scripts/scripts.min.js"></script>
 	</body>
 </html>

@@ -65,6 +65,28 @@ var StopChange;
 		$('.all-services .col-md-3').matchHeight();
 
 
+		$('.call-phone').attr('data-toggle', "tooltip").attr('title', '+88017235941615').attr('data-placement',"bottom");
+
+		$('[data-toggle="tooltip"]').tooltip();
+
+
+		//animate when scroll to another section
+		$('#main-menu a').click(AnimateScroll);
+		$('.banner-btn>a').click(AnimateScroll);
+		$('.btn-order').click(AnimateScroll);
+		function AnimateScroll ()
+		{
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top-50	//(-0) because navbar height 50px
+					}, 1000);
+					return false;
+				}
+			}
+		}
 
 	});
 

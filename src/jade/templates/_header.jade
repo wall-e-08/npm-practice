@@ -6,18 +6,18 @@ header
 					img(src=logoUrl)
 			.text-center
 				ul.nav.navbar-nav.navbar-right
-					each user_nav in ["Contact", "login", "lang(EN)", "call us"]
-						if user_nav == "lang(EN)"
+					each user_nav in topMenu
+						if user_nav["menu-name"] == "lang(EN)"
 							li.dropdown
-								a.dropdown-toggle(href="#",data-toggle="dropdown",role="button",aria-haspopup="true",aria-expanded="false")= user_nav
+								a.dropdown-toggle(href=user_nav["url"], data-toggle="dropdown",role="button", aria-haspopup="true", aria-expanded="false", id=user_nav["id"])= user_nav["menu-name"]
 									span.caret
 								ul.dropdown-menu
 									each lang_dropdown in ["EN", "BN"]
 										li.text-center
-											a(href="#")= lang_dropdown
+											a(href=user_nav["url"])= lang_dropdown
 						else
 							li.text-capitalize
-								a(href="#")= user_nav
+								a(href=user_nav["url"], class=user_nav["class"])= user_nav["menu-name"]
 	nav.navbar.navbar-default
 		.container
 			.navbar-header
@@ -27,10 +27,12 @@ header
 						span.icon-bar
 			.collapse.navbar-collapse.text-center#main-menu
 				ul.nav.navbar-nav.text-uppercase
-					each main_menu_item in ["item 1", "item 2", "item 3", "item 4", "item 5", "item 6"]
-						if main_menu_item == "item 1"
+					-var c = true
+					each menu_item in main_menu_items
+						if c
+							-c=false
 							li.active
-								a.transition(href="#")= main_menu_item
+								a.transition(href= menu_item[1])= menu_item[0]
 						else
 							li
-								a.transition(href="#")= main_menu_item
+								a.transition(href= menu_item[1])= menu_item[0]
