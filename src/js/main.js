@@ -106,7 +106,7 @@ var StopChange;
 	});
 
 	var sliderLoad = function () {
-		var _w = parseInt($(this).outerWidth());
+		/*var _w = parseInt($(this).outerWidth());
 		$('.slider').fractionSlider({
 			'fullWidth':		true,
 			'controls': 		false,
@@ -114,7 +114,7 @@ var StopChange;
 			'responsive':		true,
 			'dimensions': 		_w +", 400",
 			'increase': 		false
-		});
+		});*/
 	}
 
 
