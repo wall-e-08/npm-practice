@@ -1,0 +1,23 @@
+section#contact
+	.container
+		.heading.text-center
+			h1.text-uppercase Contact us
+			p Please send us your thought and stay connected with us
+		.row
+			.col-md-7
+				.form-wrapper
+					form(post="mail.php")
+						.form-group
+							input.form-control#name(type= "text",placeholder= "Your Name")
+						.form-group
+							input.form-control#email(type= "email",placeholder= "Your E-mail")
+						.form-group
+							textarea.form-control#msg(type= "text",placeholder= "Enter your message")
+						button.btn(type= "submit") Submit
+			.col-md-5
+				.address.text-right
+					h3 Address
+					p 32/1, Mirpur Road, Khan Plaza
+					p (4th floor, South side)
+					p Dhanmondi, Dhaka
+					p= topMenu[2]['url']

@@ -1131,6 +1131,31 @@ li.anim-slide h1 {
   }
 }
 
+#contact {
+  padding: 20px 0 50px 0;
+}
+
+#contact .heading {
+  margin-bottom: 30px;
+}
+
+#contact #msg {
+  height: 120px;
+  resize: vertical;
+}
+
+#login {
+  padding: 20px 0 50px 0;
+}
+
+#login .heading {
+  margin-bottom: 30px;
+}
+
+#login .hide-m {
+  display: none;
+}
+
 #banner {
   background-image: url("../img/static-bg.png");
   padding-bottom: 30px;

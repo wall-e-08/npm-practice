@@ -95,6 +95,14 @@ var StopChange;
 
 		sliderLoad();
 
+		var _h = $('header').outerHeight() + $('footer').outerHeight();
+		$('#contact').css('min-height', 'calc(100vh - ' + _h + 'px)');
+		$('#login').css('min-height', 'calc(100vh - ' + _h + 'px)');
+		$('#login .btn').click(function (e) {
+			e.preventDefault();
+			$('#login .hide-m').show();
+		})
+
 	});
 
 	var sliderLoad = function () {

@@ -5,13 +5,13 @@ footer
 				.copyright.text-center
 					p  All rights reserved to&nbsp
 						span copyright © 2017&nbsp
-							a(href="mailto:contact@conciitus.com").text-capitalize concitus
+							a(href="mailto:contact@oikik.io").text-uppercase oikik hosting
 			.col-md-6.text-center
 				ul.nav
 					each _social in social_links
 						li
-							a.transition(href="#")
-								i(class="fa fa-#{_social}")
+							a.transition(href = _social[1])
+								i(class="fa fa-#{_social[0]}")
 
 script(src=mainJS)
 //-	script(src=mainJS0)
