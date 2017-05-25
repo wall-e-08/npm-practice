@@ -1,5 +1,4 @@
-
-<!--include templates/__doctype_and_variables--><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -13,10 +12,10 @@
 		<header>
 			<nav class="navbar top-most-menu">
 				<div class="container">
-					<div class="navbar-header logo"><a href="#" class="navbar-brand"><img src="img/logo/logo-1.png"></a></div>
+					<div class="navbar-header logo"><a href="//oikik.io" class="navbar-brand"><img src="img/logo/logo-1.png"></a></div>
 					<div class="text-center">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="text-capitalize"><a href="contact.html">Contact</a></li>
+							<li class="text-capitalize"><a href="contact.php">Contact</a></li>
 							<li class="text-capitalize"><a href="login.html">login</a></li>
 							<li class="text-capitalize"><a href="tel:+88017235941615" class="call-phone">Call Us</a></li>
 						</ul>
@@ -31,12 +30,12 @@
 					</div>
 					<div id="main-menu" class="collapse navbar-collapse text-center">
 						<ul class="nav navbar-nav text-uppercase">
-							<li class="active"><a href="#banner" class="transition">home</a></li>
-							<li><a href="#small-pricing" class="transition">plan</a></li>
-							<li><a href="#features" class="transition">features</a></li>
-							<li><a href="#service" class="transition">service</a></li>
-							<li><a href="#detailed-plan" class="transition">buy</a></li>
-							<li><a href="#site-migration" class="transition">benefits</a></li>
+							<li class="active"><a href="//oikik.io#banner" class="transition">home</a></li>
+							<li><a href="//oikik.io#small-pricing" class="transition">plan</a></li>
+							<li><a href="//oikik.io#features" class="transition">features</a></li>
+							<li><a href="//oikik.io#service" class="transition">service</a></li>
+							<li><a href="//oikik.io#detailed-plan" class="transition">buy</a></li>
+							<li><a href="//oikik.io#site-migration" class="transition">benefits</a></li>
 						</ul>
 					</div>
 				</div>
@@ -44,24 +43,24 @@
 		</header>
 		<section id="contact">
 			<div class="container">
-				<div class="heading text-center">
+				<div class="heading text-left">
 					<h1 class="text-uppercase">Contact us</h1>
 					<p>Please send us your thought and stay connected with us</p>
 				</div>
 				<div class="row">
 					<div class="col-md-7">
 						<div class="form-wrapper">
-							<form post="mail.php">
+							<form action="" method="post">
 								<div class="form-group">
-									<input id="name" type="text" placeholder="Your Name" class="form-control">
+									<input id="name" type="text" placeholder="Your Name" name="name" class="form-control">
 								</div>
 								<div class="form-group">
-									<input id="email" type="email" placeholder="Your E-mail" class="form-control">
+									<input id="email" type="email" placeholder="Your E-mail" name="email" class="form-control">
 								</div>
 								<div class="form-group">
-									<textarea id="msg" type="text" placeholder="Enter your message" class="form-control"></textarea>
+									<textarea id="msg" type="text" placeholder="Enter your message" name="message" class="form-control"></textarea>
 								</div>
-								<button type="submit" class="btn">Submit</button>
+								<input type="submit" value="Submit" class="btn">
 							</form>
 						</div>
 					</div>

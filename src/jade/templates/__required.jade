@@ -24,7 +24,7 @@
 		{
 		"menu-name" : "Contact",
 		"class" : "",
-		"url" : "contact.html"
+		"url" : "contact.php"
 		},{
 		"menu-name" : "login",
 		"class" : "",
@@ -46,6 +46,11 @@
 		["benefits" , "#site-migration"]
 	]
 
+mixin ChangeMenuHref ()
+	-var i = 0
+	-for item in main_menu_items
+		-main_menu_items[i][1] = "//oikik.io" + main_menu_items[i][1]
+		-i++
 
 
 //- banner data

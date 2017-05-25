@@ -1,19 +1,19 @@
 section#contact
 	.container
-		.heading.text-center
+		.heading.text-left
 			h1.text-uppercase Contact us
 			p Please send us your thought and stay connected with us
 		.row
 			.col-md-7
 				.form-wrapper
-					form(post="mail.php")
+					form(action="", method="post")
 						.form-group
-							input.form-control#name(type= "text",placeholder= "Your Name")
+							input.form-control#name(type= "text",placeholder= "Your Name", name="name")
 						.form-group
-							input.form-control#email(type= "email",placeholder= "Your E-mail")
+							input.form-control#email(type= "email",placeholder= "Your E-mail", name="email")
 						.form-group
-							textarea.form-control#msg(type= "text",placeholder= "Enter your message")
-						button.btn(type= "submit") Submit
+							textarea.form-control#msg(type= "text",placeholder= "Enter your message", name="message")
+						input.btn(type= "submit", value="Submit")
 			.col-md-5
 				.address.text-right
 					h3 Address
