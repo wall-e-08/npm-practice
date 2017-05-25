@@ -168,6 +168,14 @@ img {
   color: #434a54 !important;
 }
 
+.yes {
+  color: #30e028;
+}
+
+.no {
+  color: red;
+}
+
 .gray-bg {
   background-color: #eff1f3;
 }
@@ -1164,6 +1172,10 @@ li.anim-slide h1 {
   position: relative;
 }
 
+.each-small-pricing .small-plan-offer {
+  margin-bottom: 10px;
+}
+
 .each-small-pricing:not(last-child) {
   margin-bottom: 20px;
 }
@@ -1175,7 +1187,8 @@ li.anim-slide h1 {
 }
 
 #small-pricing {
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-top: 100px;
 }
 
 #small-pricing .each-small-plan-parent {
@@ -1325,6 +1338,10 @@ li.anim-slide h1 {
   margin: 0 0 0 -32px;
 }
 
+#detailed-plan {
+  padding-top: 50px;
+}
+
 #detailed-plan .plan-table-parent {
   overflow-x: auto;
 }
@@ -1335,6 +1352,10 @@ li.anim-slide h1 {
 
 #detailed-plan tr th:not(:first-child), #detailed-plan tr td:not(:first-child) {
   width: 20%;
+}
+
+#features {
+  margin-bottom: 100px;
 }
 
 .each-feature {
@@ -1352,8 +1373,12 @@ li.anim-slide h1 {
   }
 }
 
+#site-migration {
+  margin-bottom: 60px;
+}
+
 #site-migration .migration-map-img img {
-  height: 270px;
+  height: 255px;
 }
 
 #site-migration .migration-details .nav > li {
@@ -1361,8 +1386,13 @@ li.anim-slide h1 {
 }
 
 #site-migration .migration-details .nav > li img {
-  width: 35px;
+  width: 50px;
   padding-right: 5px;
+}
+
+#site-migration .migration-details .nav > li span {
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 #site-migration .email-migration {

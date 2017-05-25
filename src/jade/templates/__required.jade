@@ -88,9 +88,9 @@
 
 mixin PlanMarking(_param)
 	if(!_param)
-		i.fa.fa-warning
+		i.fa.fa-times.no
 	else if(_param === true)
-		i.fa-adjust
+		i.fa.fa-check.yes
 	else
 		span= _param
 
@@ -156,7 +156,7 @@ mixin PlanTitle (_iteration)
 		{"imgUrl" : imgUrlPrefix + "db.png",			"title" : "Databases"},
 		{"imgUrl" : imgUrlPrefix + "dns.png",			"title" : "DNS"},
 		{"imgUrl" : imgUrlPrefix + "hosting.png",		"title" : "From any hosting"},
-		{"imgUrl" : imgUrlPrefix + "email.png",			"title" : "Email (*)"}
+		//{"imgUrl" : imgUrlPrefix + "email.png",			"title" : "Email (*)"}
 	]
 
 

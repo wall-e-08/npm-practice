@@ -1,5 +1,7 @@
 section#detailed-plan.mt-50
 	.container
+		.heading.text-center
+			h1.text-uppercase choose a plan
 		.row.text-center.plan-table-parent
 			table.table.table-striped.table-bordered
 				tr.row
@@ -17,4 +19,4 @@ section#detailed-plan.mt-50
 							td
 						else
 							td
-								a.btn.btn-order.text-uppercase order now
+								a(href=topMenu[2]['url'], class="#{topMenu[2]['class']} btn btn-order text-uppercase") call us
