@@ -68,7 +68,7 @@
 						];
 
 						$filename = __DIR__.'/contact_requests.txt';
-						file_put_contents( $filename, "\n".json_encode( $info));
+						file_put_contents( $filename, "\n".json_encode( $info), FILE_APPEND | LOCK_EX);
 						
 						?>
 
