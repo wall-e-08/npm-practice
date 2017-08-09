@@ -43,14 +43,19 @@
 		["features" , "#features"],
 		["service" , "#service"],
 		["buy" , "#detailed-plan"],
-		["benefits" , "#site-migration"]
+		["benefits" , "#site-migration"],
+		["blog" , "//blog.oikik.io/"],
+		["knowledge base" , "//knwoledgebase.oikik.io/"],
 	]
 
 mixin ChangeMenuHref ()
 	-var i = 0
 	-for item in main_menu_items
-		-main_menu_items[i][1] = "//oikik.io" + main_menu_items[i][1]
-		-i++
+		if i > 5
+			break
+		else
+			-main_menu_items[i][1] = "//oikik.io" + main_menu_items[i][1]
+			-i++
 
 
 //- banner data
@@ -64,7 +69,7 @@ mixin ChangeMenuHref ()
 -var promotionOfferedCost = "  ৳ 700"
 -
 	var offer_lists = [
-		"99.98% Uptime",
+		"99.99% Uptime",
 		"24/7/365 Support",
 		"Free Website Migration",
 		"Plesk for easier control",

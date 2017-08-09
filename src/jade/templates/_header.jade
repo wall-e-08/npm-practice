@@ -32,7 +32,13 @@ header
 						if c
 							-c=false
 							li.active
-								a.transition(href= menu_item[1])= menu_item[0]
+								if menu_item[0] == "blog" || menu_item[0] == "knowledge base"
+									a.transition(href= menu_item[1], target="_blank")= menu_item[0]
+								else
+									a.transition(href= menu_item[1])= menu_item[0]
 						else
 							li
-								a.transition(href= menu_item[1])= menu_item[0]
+								if menu_item[0] == "blog" || menu_item[0] == "knowledge base"
+									a.transition(target="_blank", href= menu_item[1])= menu_item[0]
+								else
+									a.transition(href= menu_item[1])= menu_item[0]
